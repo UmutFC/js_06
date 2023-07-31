@@ -17,5 +17,21 @@ output = parent.childNodes[3].innerText = "Child One";
 output = parent.childNodes[5].style.color = "red";
 
 output = parent.firstChild;
+output = parent.lastChild;
+
+// Paren node
+
+const child = document.querySelector(".child");
+
+output = child.parentNode;
+output = child.parentElement;
+
+child.parentNode.style.backgroundColor = "#ccc";
+
+// Siblings
+
+const secondItem = document.querySelector(".child:nth-child(2)");
+
+output = secondItem.nextSibling; // next node is white-space
 
 console.log(output);
