@@ -4,7 +4,7 @@ const listItems = document.querySelectorAll(".item"); // this will select all in
 
 console.log(listItems[1].innerText); // this will give second element of these li items
 
-listItems.style.color = "red"; // style is for spesific element so it will not work
+// listItems.style.color = "red"; // style is for spesific element so it will not work
 
 listItems[1].style.color = "red"; // this will work
 
@@ -20,7 +20,7 @@ listItems.forEach((item, index) => {
     // item.innerText = 'Oranges'; // this will change text but also it can remove other elements
 
     item.innerHTML = ` Oranges
-        <button class ="btn">
+        <button class ="remove-item btn-link text-red">
             <i class="fa-solid fa-xmark"></i>
         </button>`; // you can use innerHTML
   }

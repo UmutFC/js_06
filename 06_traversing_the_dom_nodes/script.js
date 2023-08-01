@@ -19,7 +19,7 @@ output = parent.childNodes[5].style.color = "red";
 output = parent.firstChild;
 output = parent.lastChild;
 
-// Paren node
+// Parent node
 
 const child = document.querySelector(".child");
 
